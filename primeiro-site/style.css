@@ -1,0 +1,105 @@
+body {
+    font: 100% Lucida Sans, Verdana;
+    line-height: 26px;
+    width: 1200px;
+    margin: auto;
+    background-color: #000000;
+}
+
+header {
+    display: flex;
+    background-color: #202020;
+    color: #ffffff;
+    padding: 15px;
+}
+
+header > h1 {
+    flex-grow: 1;
+    text-align: center;
+}
+
+body > nav {
+    display: flex;
+    flex-direction: row-reverse;
+    height: 60px;
+    align-items: center;
+}
+section {
+    display: flex;
+}
+
+section > article {
+    flex-basis: 40%;
+    background-color: #202020;
+    color: #ffffff;
+    padding: 10px;
+}
+
+section > nav {
+    display: flex;
+    flex-basis: 20%;
+    align-items: center;
+}
+
+section > article > p {
+    padding: 30px;
+    text-align: justify;
+}
+
+section > aside {
+    display: flex;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+section > aside > div {
+    height: 300px;
+    width: 250px;
+    margin: 21px 14px 6px;
+    background: #202020;
+    text-align: center;
+}
+
+div > h6 {
+    font-size: 16px;
+}
+
+div > img {
+    width: 124px;
+}
+
+footer {
+    border: 1px solid #202020;
+    background-color: #202020;
+    color: #ffffff;
+    text-align: center;
+    padding: 5px;
+    font-size: 70%;
+}
+
+ul {
+    width: 95%;
+    padding-inline-start: 0px;
+}
+
+li {
+    border-radius: 4px;
+    margin: 4px;
+    background-color: #f1f1f1;
+    border: 1px solid #d4d4d4;
+    color: black;
+    list-style-type: none;
+    padding: 2px;
+    cursor: pointer;
+}
+
+table {
+    width: 100%;
+}
+
+table td {
+    background-color: #cef;
+    padding: 0.5em 0.5em 0.5em 3em;
+}

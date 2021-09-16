@@ -1,0 +1,122 @@
+body {
+    font-family: cursive;
+}
+
+body > div {
+    background-color: DodgerBlue;
+}
+
+div > div {
+    background-color: #f1f1f1;
+    font-size: 30px;
+    text-align: center;
+    margin: 10px;
+    padding: 30px;
+}
+
+.ex01 {
+    display: flex;
+    flex-direction: row;
+}
+
+.ex02 {
+    display: flex;
+    flex-direction: column;
+}
+
+.ex03 {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.ex04 {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+/* não deixa o layout quebrar */
+/* .ex05 {
+    display: flex;
+    flex-wrap: wrap;
+} */
+
+/* Faz o mesmo do codigo acima, mas de forma melhor pois já define a direção */
+.ex05 {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.ex06 {
+    display: flex;
+}
+
+/* edita uma div especifica do elemento */
+.ex06 div:first-child {
+    flex-basis: 400px;
+}
+
+.ex07 {
+    display: flex;
+}
+
+/* grow faz a div crescer até onde ela puder, ocupando todo o espaço disponivel */
+.ex07 div:last-child {
+    flex-grow: 1;
+}
+
+.ex08 {
+    display: flex;
+}
+
+/* todas as divs vao ocupar o espaço disponivel, na mesma proporção, alterando o grow individualmente, cada div cresce na proporção da outra */
+.ex08 div {
+    flex-grow: 1;
+}
+
+.ex09 {
+    display: flex;
+}
+
+.ex09 div {
+    flex-basis: 300px;
+}
+
+/* elemento não irá reduzir o seu tamanho */
+.ex09 div:nth-child(2) {
+    flex-shrink: 0;
+}
+
+.ex10 {
+    display: flex;
+    height: 300px;
+    /* alinhar os itens, esticando */
+    align-items: stretch;
+}
+
+.ex11 {
+    display: flex;
+    height: 300px;
+    /* alinhar os itens, no inicio */
+    align-items: flex-start;
+}
+
+.ex12 {
+    display: flex;
+    height: 300px;
+    /* alinhar os itens, no centro */
+    align-items: center;
+}
+
+.ex13 {
+    display: flex;
+    height: 300px;
+    /* alinhar os itens, no final */
+    align-items: flex-end;
+}
+
+.ex14 {
+    display: flex;
+    height: 300px;
+    /* alinhar os itens, a partir do maior elemento */
+    align-items: baseline;
+}

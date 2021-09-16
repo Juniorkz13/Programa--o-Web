@@ -1,0 +1,123 @@
+body {
+    width: 1200px;
+    margin: 0 auto;
+    background-color: #000000;
+}
+
+/* seletor de elemento */
+header {
+    background-color: #202020;
+    color: #ffffff;
+    padding: 15px; /* margem interna do header */
+}
+
+/* seletor de id */
+#logo {
+    float: left;
+}
+
+h1 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+        'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* seletor combinador descendente, combinação de elemento e classe */
+nav button {
+    float: right;
+}
+
+/* seletor adjacente */
+header + nav {
+    height: 30px;
+    padding: 20px;
+}
+
+/* seletor universal */
+* {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+        'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* seletor de classes */
+.menu {
+    padding: 0;
+    margin: 0;
+}
+
+.menuitem {
+    list-style-type: none;
+    background-color: #f1f1f1;
+    border: solid #d4d4d4 1px;
+    padding: 10px;
+    border-radius: 20px;
+    margin: 10px 0px 0px 0px;
+    cursor: pointer;
+    text-align: center;
+    box-shadow: 10px 5px 5px #888888;
+}
+
+section nav {
+    width: 20%;
+    float: left;
+}
+
+section aside {
+    width: 70%;
+    float: right;
+}
+
+table {
+    width: 100%;
+}
+
+table td {
+    background-color: #f1f1f1;
+    padding: 0.5em;
+}
+
+footer {
+    clear: both;
+    border: 1px solid #202020;
+    background-color: #202020;
+    color: #ffffff;
+    text-align: center;
+    padding: 5px;
+    font-size: 70%;
+}
+
+/* Seletor de estados */
+a:link {
+    color: #000000;
+}
+
+a:visited {
+    color: #4a5821;
+}
+
+a:hover {
+    color: #a7d42a;
+}
+
+.menuitem:hover {
+    background-color: #a7d42a;
+}
+
+@media (max-width: 900px) {
+    body,
+    header,
+    nav,
+    section nav,
+    section aside,
+    aside,
+    footer {
+        width: 100%;
+    }
+
+    section nav {
+        clear: both;
+    }
+
+    section aside {
+        clear: both;
+    }
+}

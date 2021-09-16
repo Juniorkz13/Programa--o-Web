@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width" />
+        <title>Formulário de Inscrição</title>
+        <link href="style.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <form action="index.html" method="POST">
+            <h1>Inscreva-se</h1>
+            <img src="img/info.png" alt="Info" />
+            <span
+                >Preencha o formulário abaixo e clique no botão
+                <em>"Inscreva-se"</em></span
+            >
+            <fieldset>
+                <legend>
+                    <span>1</span>
+                    Informações básicas
+                </legend>
+                <label for="nome">
+                    <span>Nome:</span>
+                    <input type="text" name="nome" id="nome" />
+                </label>
+                <label for="email">
+                    <span>E-mail:</span>
+                    <input type="email" name="email" id="email" />
+                </label>
+                <label for="senha">
+                    <span>Senha:</span>
+                    <input type="password" name="senha" id="senha" />
+                </label>
+                <label for="confirmar-senha">
+                    <span>Confirmar senha:</span>
+                    <input
+                        type="password"
+                        name="confirmar-senha"
+                        id="confirmar-senha"
+                    />
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend>
+                    <span>2</span>
+                    Perfil
+                </legend>
+                <label for="bio">
+                    <span>Biografia:</span>
+                    <textarea name="bio" id="bio"></textarea>
+                </label>
+            </fieldset>
+            <button type="submit">Inscreva-se</button>
+        </form>
+    </body>
+</html>
