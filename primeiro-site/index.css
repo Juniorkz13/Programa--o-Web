@@ -50,16 +50,17 @@ section > aside {
     display: flex;
     flex-grow: 1;
     flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-around;
+    align-items: flex-end;
+    justify-content: center;
 }
 
 section > aside > div {
-    height: 300px;
-    width: 250px;
+    height: 270px;
+    width: 270px;
     margin: 21px 14px 6px;
     background: #202020;
     text-align: center;
+    border-radius: 20px;
 }
 
 div > h6 {
@@ -67,16 +68,29 @@ div > h6 {
 }
 
 div > img {
-    width: 124px;
+    width: 120px;
+}
+
+div > h6 > a:link {
+    color: #ffffff;
+}
+
+div > h6 > a:visited {
+    color: #ffffff;
+}
+
+div > h6 > a:hover {
+    color: #a7d42a;
 }
 
 footer {
+    display: flex;
     border: 1px solid #202020;
     background-color: #202020;
     color: #ffffff;
-    text-align: center;
     padding: 5px;
     font-size: 70%;
+    justify-content: center;
 }
 
 ul {
