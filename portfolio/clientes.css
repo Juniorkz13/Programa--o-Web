@@ -1,6 +1,6 @@
 body {
-    background-color: rgb(255, 219, 197);
-    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(46, 17, 45);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .navbar {
@@ -10,7 +10,8 @@ body {
     justify-content: flex-start;
     align-items: center;
     overflow: hidden;
-    background-color: rgb(124, 0, 50);
+    background-color: rgb(200, 41, 63);
+    border-radius: 15px;
 }
 
 .navbar a {
@@ -21,14 +22,11 @@ body {
     align-items: center;
     padding: 12px 14px;
     text-decoration: none;
+    color: rgb(124, 0, 50);
 }
 
 .navbar a:hover {
-    background-color: rgb(238, 67, 57);
-    color: rgb(255, 219, 197);
-}
-
-.navbar a:visited {
+    background-color: rgb(124, 0, 50);
     color: rgb(200, 41, 63);
 }
 
@@ -37,15 +35,16 @@ body {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-start;
-    color: rgb(124, 0, 50);
+    color: rgb(200, 41, 63);
     font-size: 20px;
+    padding: 30px;
 }
 
 .conteudo {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content: space-around;
     align-items: flex-start;
     padding: 30px;
     font-size: large;
@@ -74,9 +73,9 @@ footer {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    background-color: rgb(255, 219, 197);
-    color: rgb(124, 0, 50);
-    border-top: rgb(124, 0, 50) solid 1px;
+    background-color: rgb(46, 17, 45);
+    color: rgb(200, 41, 63);
+    border-top: rgb(200, 41, 63) solid 1px;
     font-size: 10px;
     text-align: center;
 }

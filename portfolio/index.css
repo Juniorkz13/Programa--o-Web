@@ -1,14 +1,12 @@
 body {
-    background-color: rgb(255, 219, 197);
-    font-family: Arial, Helvetica, sans-serif;
-    max-width: 1400px;
+    background-color: rgb(46, 17, 45);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 header {
     display: flex;
-    background-color: rgb(255, 219, 197);
+    background-color: rgb(46, 17, 45);
     height: 100px;
-    width: 100%;
     padding-top: 10px;
     padding-left: 30px;
     align-items: center;
@@ -27,7 +25,7 @@ header h1 {
     display: flex;
     font-size: 30px;
     font-weight: lighter;
-    color: rgb(124, 0, 50);
+    color: rgb(200, 41, 63);
     margin-left: 10px;
 }
 
@@ -38,20 +36,20 @@ header h1 {
 
 .coluna1 {
     display: flex;
-    background-color: rgb(255, 219, 197);
+    background-color: rgb(46, 17, 45);
     flex-direction: row;
     flex-wrap: wrap;
     align-content: center;
-    justify-content: flex-start;
-    align-items: flex-start;
-    padding-left: 30px;
+    justify-content: center;
+    align-items: center;
 }
 
 .coluna1 > div > img {
     display: flex;
-    height: 450px;
-    width: 450px;
+    height: 350px;
+    width: 350px;
     border-radius: 100%;
+    padding-left: 10px;
     padding-right: 10px;
 }
 
@@ -61,7 +59,8 @@ header h1 {
     align-items: flex-start;
     justify-content: center;
     margin-left: 30px;
-    width: 500px;
+    padding-right: 10px;
+    width: 350px;
 }
 
 .coluna1 > article > h2 {
@@ -70,7 +69,7 @@ header h1 {
     font-weight: bolder;
     margin-top: 0px;
     margin-bottom: 0px;
-    color: rgb(124, 0, 50);
+    color: rgb(200, 41, 63);
 }
 
 .coluna1 > article > h3 {
@@ -78,101 +77,48 @@ header h1 {
     font-size: 40px;
     font-weight: bold;
     margin-top: 0px;
-    color: rgb(124, 0, 50);
+    color: rgb(200, 41, 63);
 }
 
 .coluna1 > article > p {
     display: flex;
     font-size: 20px;
-    color: rgb(124, 0, 50);
+    color: rgb(200, 41, 63);
     text-align: justify;
 }
 
-.coluna2 {
+.navbar {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-content: center;
     justify-content: center;
     align-items: center;
-    background-color: rgb(255, 219, 197);
+    background-color: rgb(46, 17, 45);
+    overflow: hidden;
+    width: 100%;
 }
 
-.trabalhos {
+.navbar > a {
     display: flex;
-    height: 180px;
-    width: 180px;
-    border-radius: 100%;
-    background-color: rgb(124, 0, 50);
-    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
     justify-content: center;
-    margin: 10px;
-    font-size: 13px;
-    color: rgb(200, 41, 63);
-}
-
-.trabalhos:hover {
-    background-color: rgb(238, 67, 57);
-    color: rgb(255, 219, 197);
-}
-
-.recomendacoes {
-    display: flex;
-    height: 180px;
-    width: 180px;
-    border-radius: 100%;
-    background-color: rgb(124, 0, 50);
     align-items: center;
-    justify-content: center;
-    margin: 10px;
-    font-size: 13px;
-    color: rgb(200, 41, 63);
-}
-
-.recomendacoes:hover {
-    background-color: rgb(238, 67, 57);
-    color: rgb(255, 219, 197);
-}
-
-.clientes {
-    display: flex;
-    height: 180px;
-    width: 180px;
-    border-radius: 100%;
-    background-color: rgb(124, 0, 50);
-    align-items: center;
-    justify-content: center;
-    margin: 10px;
-    font-size: 13px;
-    color: rgb(200, 41, 63);
-}
-
-.clientes:hover {
-    background-color: rgb(238, 67, 57);
-    color: rgb(255, 219, 197);
-}
-
-.contato {
-    display: flex;
-    height: 180px;
-    width: 180px;
-    border-radius: 100%;
-    background-color: rgb(124, 0, 50);
-    align-items: center;
-    justify-content: center;
-    margin: 10px;
-    font-size: 13px;
-    color: rgb(200, 41, 63);
-}
-
-.contato:hover {
-    background-color: rgb(238, 67, 57);
-    color: rgb(255, 219, 197);
-}
-
-.coluna2 > div > h2 > a {
-    display: flex;
     text-decoration: none;
+    color: rgb(124, 0, 50);
+    background-color: rgb(200, 41, 63);
+    padding: 10px;
+    margin: 10px;
+    height: 180px;
+    width: 180px;
+    border-radius: 100%;
+    font-size: 23px;
+}
+
+.navbar > a:hover {
+    background-color: rgb(124, 0, 50);
     color: rgb(200, 41, 63);
 }
 
@@ -181,9 +127,9 @@ footer {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    background-color: rgb(255, 219, 197);
-    color: rgb(124, 0, 50);
-    border-top: rgb(124, 0, 50) solid 1px;
+    background-color: rgb(46, 17, 45);
+    color: rgb(200, 41, 63);
+    border-top: rgb(200, 41, 63) solid 1px;
     font-size: 10px;
     text-align: center;
 }
