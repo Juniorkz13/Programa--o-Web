@@ -1,0 +1,260 @@
+body {
+    background-color: rgb(255, 219, 197);
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 1400px;
+}
+
+header {
+    display: flex;
+    background-color: rgb(255, 219, 197);
+    height: 100px;
+    width: 100%;
+    padding-top: 10px;
+    padding-left: 30px;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+header span {
+    display: flex;
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    background-color: rgb(200, 41, 63);
+}
+
+header h1 {
+    display: flex;
+    font-size: 30px;
+    font-weight: lighter;
+    color: rgb(124, 0, 50);
+    margin-left: 10px;
+}
+
+.corpo {
+    display: flex;
+    flex-direction: column;
+}
+
+.coluna1 {
+    display: flex;
+    background-color: rgb(255, 219, 197);
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-left: 30px;
+}
+
+.coluna1 > div > img {
+    display: flex;
+    height: 450px;
+    width: 450px;
+    border-radius: 100%;
+    padding-right: 10px;
+}
+
+.coluna1 > article {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin-left: 30px;
+    width: 500px;
+}
+
+.coluna1 > article > h2 {
+    display: flex;
+    font-size: 110px;
+    font-weight: bolder;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color: rgb(124, 0, 50);
+}
+
+.coluna1 > article > h3 {
+    display: flex;
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: 0px;
+    color: rgb(124, 0, 50);
+}
+
+.coluna1 > article > p {
+    display: flex;
+    font-size: 20px;
+    color: rgb(124, 0, 50);
+    text-align: justify;
+}
+
+.coluna2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 219, 197);
+}
+
+.trabalhos {
+    display: flex;
+    height: 180px;
+    width: 180px;
+    border-radius: 100%;
+    background-color: rgb(124, 0, 50);
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    font-size: 13px;
+    color: rgb(200, 41, 63);
+}
+
+.trabalhos:hover {
+    background-color: rgb(238, 67, 57);
+    color: rgb(255, 219, 197);
+}
+
+.recomendacoes {
+    display: flex;
+    height: 180px;
+    width: 180px;
+    border-radius: 100%;
+    background-color: rgb(124, 0, 50);
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    font-size: 13px;
+    color: rgb(200, 41, 63);
+}
+
+.recomendacoes:hover {
+    background-color: rgb(238, 67, 57);
+    color: rgb(255, 219, 197);
+}
+
+.clientes {
+    display: flex;
+    height: 180px;
+    width: 180px;
+    border-radius: 100%;
+    background-color: rgb(124, 0, 50);
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    font-size: 13px;
+    color: rgb(200, 41, 63);
+}
+
+.clientes:hover {
+    background-color: rgb(238, 67, 57);
+    color: rgb(255, 219, 197);
+}
+
+.contato {
+    display: flex;
+    height: 180px;
+    width: 180px;
+    border-radius: 100%;
+    background-color: rgb(124, 0, 50);
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    font-size: 13px;
+    color: rgb(200, 41, 63);
+}
+
+.contato:hover {
+    background-color: rgb(238, 67, 57);
+    color: rgb(255, 219, 197);
+}
+
+.coluna2 > div > h2 > a {
+    display: flex;
+    text-decoration: none;
+    color: rgb(200, 41, 63);
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: rgb(255, 219, 197);
+    color: rgb(124, 0, 50);
+    border-top: rgb(124, 0, 50) solid 1px;
+    font-size: 10px;
+    text-align: center;
+}
+
+.telefone {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.telefone > h1 {
+    display: flex;
+    margin-bottom: 0px;
+}
+
+.telefone > h2 {
+    display: flex;
+    font-weight: lighter;
+}
+
+.mail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mail > h1 {
+    display: flex;
+    margin-bottom: 0px;
+}
+
+.mail > h2 {
+    display: flex;
+    font-weight: lighter;
+}
+
+.end {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.end > h1 {
+    display: flex;
+    margin-bottom: 0px;
+}
+
+.end > h2 {
+    display: flex;
+    font-weight: lighter;
+}
+
+.autor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.autor > h1 {
+    display: flex;
+    margin-bottom: 0px;
+}
+
+.autor > h2 {
+    display: flex;
+    font-weight: lighter;
+}
+
+@media (max-width: 600px) {
+    body {
+        flex-direction: column;
+        width: auto;
+    }
+}
