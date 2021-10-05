@@ -1,0 +1,138 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(46, 17, 45);
+    color: rgb(255, 219, 197);
+}
+
+body > div {
+    background-color: rgb(130, 2, 51);
+}
+
+div > div {
+    background-color: rgb(255, 108, 64);
+    font-size: 30px;
+    text-align: center;
+    border-style: dashed;
+    border-width: 1px;
+}
+
+.ex01 {
+    display: grid;
+}
+
+.ex02 {
+    /* cada coluna terá os tamanhos definidos */
+    display: grid;
+    grid-template-columns: 100px 200px 300px;
+}
+
+.ex03 {
+    /* cada coluna terá o mesmo tamanho, dividido entre elas, ocupando todo o espaço */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    /* repeat(3, 1fr);  faz a mesma coisa do acima */
+}
+
+.ex04 {
+    /* cada coluna terá o mesmo tamanho, dividido entre elas, ocupando todo o espaço */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* define o tamanho de cada linha */
+    grid-template-rows: 200px 300px;
+}
+
+.ex05 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* espaçamento entre as colunas */
+    grid-column-gap: 20px;
+}
+
+.ex06 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* espaçamento entre as linhas */
+    grid-row-gap: 20px;
+}
+
+.ex07 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* espaçamento entre as linhas e colunas */
+    gap: 20px;
+}
+
+.exemplo-layout-01 * {
+    background-color: rgb(255, 108, 64);
+    font-size: 30px;
+    text-align: center;
+    border-style: dashed;
+    border-width: 1px;
+}
+
+.exemplo-layout-01 {
+    display: grid;
+    gap: 5px;
+}
+
+.exemplo-layout-01 header {
+    /* está ocupando da coluna 1 até a 4 (de ponta a ponta) */
+    grid-column: 1 / 4;
+}
+
+.exemplo-layout-01 main {
+    grid-column: 1;
+}
+
+.exemplo-layout-01 nav {
+    grid-column: 2 / 4;
+}
+
+.exemplo-layout-01 footer {
+    grid-column: 1 / 4;
+}
+
+.exemplo-layout-02 * {
+    background-color: rgb(255, 108, 64);
+    font-size: 30px;
+    text-align: center;
+    border-style: dashed;
+    border-width: 1px;
+}
+
+.exemplo-layout-02 {
+    display: grid;
+    /* outra forma de já definir as áreas do layout */
+    grid-template-areas:
+        'header header header'
+        'main nav nav'
+        'footer footer footer';
+    gap: 5px;
+}
+
+.exemplo-layout-02 header {
+    grid-area: header;
+}
+
+.exemplo-layout-02 main {
+    grid-area: main;
+}
+
+.exemplo-layout-02 nav {
+    grid-area: nav;
+}
+
+.exemplo-layout-02 footer {
+    grid-area: footer;
+}
+
+/* transformando o layout em responsivo */
+@media (max-width: 900px) {
+    .exemplo-layout-02 {
+        grid-template-areas:
+            'header'
+            'main'
+            'nav'
+            'footer';
+    }
+}
