@@ -2,11 +2,10 @@
 import React from 'react'
 
 import './CardCategoria.css'
-import android from '../img/android.png'
 
-export default () => (
+export default ({ nome, imagem }) => (
     <div className="card">
-        <h6>Android</h6>
-        <img src={android} alt="Android" />
+        <h6>{nome}</h6>
+        <img src={imagem} alt={nome} />
     </div>
 )
