@@ -1,0 +1,28 @@
+.card {
+    height: 270px;
+    width: 270px;
+    margin: 21px 14px 6px;
+    background: #202020;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.card > h6 {
+    font-size: 16px;
+}
+
+.card > img {
+    width: 120px;
+}
+
+.card > h6 > a:link {
+    color: #ffffff;
+}
+
+.card > h6 > a:visited {
+    color: #ffffff;
+}
+
+.card > h6 > a:hover {
+    color: #a7d42a;
+}
